@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import Posts from './components/Posts';
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
   // holds number of posts per page
   const [postsPerPage, setpostsPerPage] = useState(10);
 
-
+  // gets Posts from jsonplaceholder when component Init
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
@@ -28,11 +29,17 @@ const App = () => {
     fetchPosts();
   }, []);
 
-  console.log(posts);
+
+  // get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
 
   return (
-    <div>
-      <h1>Pagination</h1>
+    <div className='container mt-5'>
+      <h1 className='text-primary mb-3'>Pagination</h1>
+      <Posts posts={currentPosts} loading={loading} />
     </div>
   )
 }
