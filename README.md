@@ -16,7 +16,7 @@ npm install
 npm start
 ```
 
-![alt text](https://github.com/dylut2000/React_simple_pagination/blob/main/image.jpg?raw=true)
+![image](https://github.com/dylut2000/React_simple_pagination/blob/main/image.png?raw=true)
 
 #
 
