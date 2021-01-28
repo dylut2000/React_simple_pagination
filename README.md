@@ -1,3 +1,27 @@
+# Simple frontend pagination
+
+They are many node package manager that can helps you do pagination in React or Angular, but sometime it better to implement it yourself using simple javascript logics just to avoid a big bundle size when building your project
+
+this app demostrate a simple way you can achieve pagination without NPM
+
+## To run the application
+
+clone or download the zip, open the app in your terminal, and enter the following command
+
+```
+npm install
+```
+
+```
+npm start
+```
+
+#
+
+#
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
